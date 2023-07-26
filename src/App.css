@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "nunito";
+  src: url('./fonts/Nunito-Regular.woff');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: "nunito-med";
+  src: url('./fonts/Nunito-Medium.woff');
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@font-face {
+  font-family: "nunito-bold";
+  src: url('./fonts/Nunito-Bold.woff');
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: "nunito-bold";
+}
+
+p,a,button{
+  font-family: "nunito";
+}
+
+
+.flex{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.flex-c{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flex-b{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
+.tx{
+  line-height: 1.7;
+  font-size: max(14px, 0.8vw);
+}
+
+
+:root {
+  --main-color: rgb(0, 89, 255);
+}
+

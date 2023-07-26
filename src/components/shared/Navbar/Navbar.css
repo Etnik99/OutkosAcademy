@@ -1,0 +1,78 @@
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: max(70px, 5vw);
+    padding: 0 5%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.logo{
+    text-decoration: none;
+}
+.nav-logo{
+    content: url('../../../assets/home/navbar/logo.avif');
+    width: 60px;
+    height: 60px;
+}
+.logo h1{
+    font-size: max(20px, 2vw);
+    color: var(--main-color);
+}
+
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: max(20px, 2.5vw);
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.2s;
+}
+.nav-links a:hover{
+    transform: scale(1.1);
+}
+
+.nav-auth{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+#login{
+    background: none;
+    border: none;
+}
+
+#register{
+    width: max(80px, 6vw);
+    height: max(40px, 3vw);
+    border: none;
+    background: rgb(0, 89, 255);
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.hamburger{
+    display: none;
+  }
+  
+  .hamburger svg{
+    font-size: 30px;
+  }
+  
+  @media (max-width:830px) {
+        .nav-links{
+            display: none;
+        }
+
+        .nav-auth{
+            display: none;
+        }
+
+        .hamburger{
+            display: flex;
+        }
+  }
